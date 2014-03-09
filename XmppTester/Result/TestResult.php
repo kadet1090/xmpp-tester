@@ -67,7 +67,7 @@ class TestResult extends Result
     public function jsonSerialize()
     {
         return array_merge(parent::jsonSerialize(), [
-            'min' => $this->_max
+            'max' => $this->_max
         ]);
     }
 }

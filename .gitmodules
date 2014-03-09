@@ -4,3 +4,6 @@
 [submodule "Kadet/Utils"]
 	path = Kadet/Utils
 	url = https://github.com/kadet1090/Utils.git
+[submodule "Kadet/SocketLib"]
+	path = Kadet/SocketLib
+	url = https://github.com/kadet1090/SocketLib.git

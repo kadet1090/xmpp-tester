@@ -24,7 +24,7 @@ class InfoResult extends Result {
 
     function __construct($result)
     {
-        $this->_result = $result;
+        $this->_result = (string)$result;
     }
 
     public function set($result) {

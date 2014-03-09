@@ -33,7 +33,7 @@ abstract class TestSuite implements \JsonSerializable
     /**
      * @var Result[]
      */
-    private $results = [];
+    protected $results = [];
 
     public function _get_score() {
         $iterator = new \RecursiveIteratorIterator(new \RecursiveArrayIterator($this->results), \RecursiveIteratorIterator::SELF_FIRST);

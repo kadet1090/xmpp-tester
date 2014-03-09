@@ -1,7 +1,7 @@
 <?php
 /**
  * Copyright (C) 2014, Some right reserved.
- * @author Kacper "Kadet" Donat <kadet1090@gmail.com>
+ * @author  Kacper "Kadet" Donat <kadet1090@gmail.com>
  * @license http://creativecommons.org/licenses/by-sa/4.0/legalcode CC BY-SA
  *
  * Contact with author:
@@ -15,14 +15,16 @@ namespace XmppTester\Result;
 
 use Kadet\Utils\Property;
 
-class BenchmarkResult extends Result {
+class BenchmarkResult extends Result
+{
     use Property;
 
     protected $_type = 'benchmark';
 
     private $_results;
 
-    public function append($result) {
+    public function append($result)
+    {
         $this->_results[] = (float)$result;
     }
 
@@ -41,8 +43,8 @@ class BenchmarkResult extends Result {
     public function jsonSerialize()
     {
         return array_merge(parent::jsonSerialize(), [
-            'max'   => max($this->_results),
-            'min'   => min($this->_results)
+            'max' => max($this->_results),
+            'min' => min($this->_results)
         ]);
     }
 }
