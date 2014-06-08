@@ -1,0 +1,7 @@
+{
+    "minimum-stability": "dev",
+    "require": {
+        "kadet/xmpp": "dev-master",
+        "psr/log": "1.0.0"
+    }
+}
