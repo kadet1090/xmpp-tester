@@ -55,10 +55,17 @@ class ServerTester {
     }
 
     public function save() {
+        $tests = $this->_tests;
+
+        if(file_exists('./Servers/'.$this->_server.'.json')) {
+            $previous = json_decode(file_get_contents('./Servers/'.$this->_server.'.json'));
+            $tests = array_merge((array)$previous->tests, $tests);
+        }
+
         file_put_contents('./Servers/'.$this->_server.'.json', json_encode([
             'server' => $this->_server,
             'date'   => time(),
-            'tests'  => $this->_tests
+            'tests'  => $tests
         ], JSON_PRETTY_PRINT));
     }
 

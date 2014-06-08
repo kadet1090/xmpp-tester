@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "ce998e890782f4ea73a33f3208fe8e12",
+    "hash": "d9f9a9a57cd8cc3bff89cfdf6de94797",
     "packages": [
         {
             "name": "kadet/socket-lib",
